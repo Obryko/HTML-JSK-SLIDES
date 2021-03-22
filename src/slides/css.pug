@@ -1,0 +1,124 @@
+section
+    section#css
+        h3 CSS
+    section#css-def
+        p CSS jest językiem określającym, jak dokumenty HTML mają być prezentowane użytkownikowi.
+        p Nazwa „kaskadowe arkusze stylów” wynika z faktu, iż gdy reguły CSS wykluczają się wzajemnie w 
+            |arkuszu zewnętrznym, arkuszu wewnętrznym oraz na poziomie elementów HTML, priorytet stylów 
+            |ustalany jest hierarchicznie.
+    section 
+        h4 Jak podłączyć CSS do HTML
+        pre 
+            code.html.code-size
+                |&lt;head&gt;
+                |   ...
+                |   &lt;link rel="stylesheet" href="styles.css"&gt;
+                |   ...
+                |&lt;/head&gt;    
+    section 
+        h4 Selektory 
+        ul 
+            li.fragment.fade-right(data-fragment-index='1')
+                a.fragment.highlight(href='https://developer.mozilla.org/pl/docs/Learn/CSS/Building_blocks/Selectors#informacja_selektory', data-fragment-index='1', target="_blank")
+                    | tag
+                | - div, p, input, button
+            li.fragment.fade-right(data-fragment-index='2')
+                a.fragment.highlight(href='https://developer.mozilla.org/pl/docs/Learn/CSS/Building_blocks/Selectors#selektor_class', data-fragment-index='2', target="_blank")
+                    | klasa 
+                | - .box
+            li.fragment.fade-right(data-fragment-index='3')
+                a.fragment.highlight(href='https://developer.mozilla.org/pl/docs/Learn/CSS/Building_blocks/Selectors#selektor_id', data-fragment-index='3', target="_blank")
+                    | id 
+                | - #title, #container 
+        pre.fragment.fade-right(data-fragment-index='4')
+            code.html.code-size
+                | &lt;div class="box" id="container"&gt;&lt;/div&gt;
+    section 
+        pre
+            code.css.code-size
+                |.box {
+                |   background-color: red;    
+                |   font-size: 12px;    
+                |   color: white; 
+                |}
+    section 
+        h4 Margines i padding 
+        pre 
+            code.css.code-size
+                |.content {
+                |   margin: 5%;  /* wszystkie strony margines 5% */
+                |   padding: 5%;  /* wszystkie strony padding 5% */
+                |}
+                |
+                |.content {
+                |   margin: 10px 20px;            /*  górny i dolny margines 10px, lewy i prawy margines 20px */
+                |   padding: 10px 20px;            /*  górny i dolny padding 10px, lewy i prawy padding 20px */
+                |}                                
+                |
+                |.content {                       /*  górny margines i padding 10px */
+                |   margin: 10px 3% 20px;         /*  lewy i prawy margines i padding 3% */
+                |   padding: 10px 3% 20px;        /*  dolny margines i padding 20px */
+                |}                                
+                |
+                |.content {                       /*  górny margines i padding 10px */
+                |   margin: 10px 3px 30px 5px;    /*  prawy margines i padding 3px */
+                |   padding: 10px 3px 30px 5px;    /*  lewy margines i padding 5px */
+                |}                                /*  dolny margines i padding 30px */
+    section 
+        img(src="https://miro.medium.com/max/700/1*xOn6MsNhUcju7Did367ssQ.jpeg")
+    section 
+        h4 Dziedziczenie 
+        .small-grid
+            .center-content
+                | A E { ... }
+            .center-content
+                span.small-text Dowolny element E, który jest potomkiem elementu A (to znaczy jest dzieckiem albo dzieckiem dziecka, itp.))
+            .center-content
+                | A &gt; E { ... }
+            .center-content
+                span.small-text Dowolny element E, który jest dzieckiem elementu A.
+            .center-content
+                | A + E { ... }
+            .center-content
+                span.small-text Dowolny element E, który jest następnym z rodzeństwa elementu B (to znaczy: następnym dzieckiem tego samego rodzica).
+
+    section 
+        h4 
+            a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes") Pseudo klasy 
+        span Pseudo klasy pozwalają obsługiwać dodatowe efekty.
+        pre 
+            code.css.code-size
+                | selector:pseudo-klasa { ... }
+    section 
+        .small-grid 
+            .center-content
+                | :focus
+            .center-content
+                span.small-text Pozwala stylować aktualnie aktywny element.
+            .center-content
+                | :hover
+            .center-content
+                span.small-text W ten sposób stylujemy element na który najechało się kursorem. 
+            .center-content
+                | :nth-child(n)
+            .center-content
+                span.small-text stylujemy n-ty tag. 
+            .center-content
+                | :first-child
+            .center-content
+                span.small-text sprawia iż własności stosowane są do elementu tylko wtedy gdy jest on pierwszym węzłem potomnym swojego rodzica.
+    section 
+        h4 
+            a(href="https://developer.mozilla.org/pl/docs/Learn/CSS/CSS_layout/Flexbox") Flexbox 
+        span Flexbox to jednowymiarowa metoda rozmieszczania elementów w wierszach lub kolumnach, przedmioty rozciągają się aby wypełnić dodatkową przestrzeń lub kurczą się aby dopasować się do mniejszych przestrzeni.
+    section 
+        h4 
+            a(href="https://developer.mozilla.org/pl/docs/Learn/CSS/CSS_layout/Grids") Grid 
+        span 
+            |CSS Grid Layout jest najlepszą metodą aby podzielić strone na części lub definiowanie relacji takich jak rozmiar, pozycja i warstwa, pomiędzy podstawowymi elementami HTML.
+            |Podobnie do tabel (ang. "tables"), rozmieszczenie grid (ang. "siatka") pozwala autorowi wyrównać elementy w kolumny i wiersze. Jednakowoż grid pozwala na wiele więcej ułożeń niż tabele.
+
+
+
+
+
