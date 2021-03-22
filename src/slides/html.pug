@@ -1,0 +1,169 @@
+section
+    section#html
+        h3 HTML
+    section#basic-tags
+        p HTML (Hypertext Markup Language) jest to kod używany do tworzenia struktury strony i jej zawartości. 
+    section
+        p 
+            strong Nie jest językiem programowania 
+            em jest językiem znaczników (ang. markup language). 
+            | HTML składa się z serii znaczników (tagów), których używa się do zamknięcia, opakowania różnych części treści, tak aby wyglądały i/lub działały w określony sposób. Z pomocą tagów możesz ze słów czy obrazów zrobić linki do innych stron, sprawić by były napisane kursywą, większą czcionką, wytłuścić je itd.
+    section
+        img(src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png")
+    section
+        img(src="https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png")
+    section
+        h4
+            a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements', target="_blank") Nagłówki
+        .grid
+            div.center-content h1
+            div.center-content 
+                pre
+                    code.html.code-size &lt;h1&gt; To jest H1  &lt;/h1&gt;
+            div.center-content.ren-content      
+                h1 To jest H1
+            div.center-content h2
+            div.center-content 
+                pre
+                    code.html.code-size &lt;h2&gt; To jest H2  &lt;/h2&gt;
+            div.center-content.ren-content      
+                h2 To jest H2
+            div.center-content h3
+            div.center-content 
+                pre
+                    code.html.code-size &lt;h3&gt; To jest H3  &lt;/h2&gt;
+            div.center-content.ren-content      
+                h3 To jest H3
+            div.center-content h4
+            div.center-content 
+                pre
+                    code.html.code-size &lt;h4&gt; To jest H4  &lt;/h2&gt;
+            div.center-content.ren-content      
+                h4 To jest H4
+            div.center-content h5
+            div.center-content 
+                pre
+                    code.html.code-size &lt;h5&gt; To jest H5  &lt;/h2&gt;
+            div.center-content.ren-content      
+                h5 To jest H5
+            div.center-content h6
+            div.center-content 
+                pre
+                    code.html.code-size &lt;h6&gt; To jest H6  &lt;/h6&gt;
+            div.center-content.ren-content      
+                h6 To jest H6
+
+    section
+        h4 Tekst 
+        .grid
+            div.center-content 
+                a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p', target="_blank") p
+            div.center-content 
+                pre
+                    code.html.code-size &lt;p&gt; 
+                        | Paragraf .... Lorem ipsum 
+                        | dolor sit amet consectetur 
+                        | adipisicing elit. Consectetur, 
+                        | dolor. Aspernatur adipisci 
+                        | labore ipsa, facere fugit 
+                        | repellat sit maiores, 
+                        | eius quae quos natus nisi 
+                        | nobis facilis tenetur culpa nulla est.  
+                        | &lt;/p&gt;
+            div.center-content.ren-content      
+                p Paragraf .... Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor. Aspernatur adipisci labore ipsa, facere fugit repellat sit maiores, eius quae quos natus nisi nobis facilis tenetur culpa nulla est.
+            div.center-content
+                a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span', target="_blank") span
+            div.center-content 
+                pre
+                    code.html.code-size &lt;span&gt;
+                        | Span .... Lorem ipsum&lt;/span&gt;
+            div.center-content.ren-content      
+                span Span .... Lorem ipsum
+    section
+        h4 
+            a(href='https://developer.mozilla.org/pl/docs/Web/HTML/Element/div', target="_blank") div 
+        p 
+            |jest rodzajem pojemnika na treść. Nie ma on żadnego wpływu na treść ani układ graficzny, 
+            |dopóki nie zostanie ostylizowany z użyciem CSS. Element &lt;div&gt; jako "czysty" pojemnik niczego nie reprezentuje. 
+            |Zamiast tego, jest on używany do grupowania zawartości.
+    section
+        h4 Wprowadzanie danych
+        .grid 
+            div.center-content
+                a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input', target="_blank") input
+            div.center-content 
+                pre
+                    code.html.code-size
+                        | &lt;label for="name"&gt;Name&lt;/label&gt;
+                        | &lt;input type="text" id="name" name="name" /&gt;
+            div.center-content.ren-content 
+                label(for="name") Name
+                input(type="text", id="name", name="name")
+            div.center-content
+                a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea', target="_blank") teaxtarea
+            div.center-content 
+                pre
+                    code.html.code-size
+                        | &lt;label for="info"&gt;Info&lt;/label&gt;
+                        | &lt;textarea cols="30" rows="10" type="text" id="info" name="info" /&gt;
+            div.center-content.ren-content 
+                label(for="info") Info
+                textarea(cols="30", rows="10", type="text", id="info", name="info")
+            div.center-content
+                a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button', target="_blank") button
+            div.center-content 
+                pre
+                    code.html.code-size
+                        | &lt;button onClick="alert('Test')"&gt;Submit&lt;/button&gt;
+            div.center-content.ren-content 
+                button(onClick="alert('Test')") Submit
+    section
+        h4 Inne przydatne tagi 
+        ul 
+            li.fragment.fade-right(data-fragment-index='1')
+                a.fragment.highlight(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table', data-fragment-index='1', target="_blank")
+                    | tabel, tr, td
+            li.fragment.fade-right(data-fragment-index='2')
+                | listy 
+                a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol', target="_blank") numerowane
+                |  i 
+                a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul', target="_blank") punktowe
+    section 
+        h4 Semantyczny HTML 
+        ul 
+            li.fragment.fade-right(data-fragment-index='1')
+                a.fragment.highlight(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header', data-fragment-index='1', target="_blank")
+                    | header
+            li.fragment.fade-right(data-fragment-index='2')
+                a.fragment.highlight(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article', data-fragment-index='2', target="_blank")
+                    | article
+            li.fragment.fade-right(data-fragment-index='3')
+                a.fragment.highlight(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer', data-fragment-index='3', target="_blank")
+                    | footer
+            li.fragment.fade-right(data-fragment-index='4')
+                a.fragment.highlight(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main', data-fragment-index='4', target="_blank")
+                    | main
+            li.fragment.fade-right(data-fragment-index='5')
+                a.fragment.highlight(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav', data-fragment-index='5', target="_blank")
+                    | nav
+            li.fragment.fade-right(data-fragment-index='6')
+                a.fragment.highlight(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section', data-fragment-index='6', target="_blank")
+                    | section
+    section 
+        img.white-bg(src="https://miro.medium.com/max/500/1*zHJFnu7QF-PgUb8108aLcA.png")
+    section
+        h4 Struktura pliku HTML 
+        pre.fragment.fade-right(data-fragment-index='1')
+            code.html.code-size
+                |&lt;!DOCTYPE html&gt;
+                |&lt;html&gt;
+                |   &lt;head&gt;
+                |       &lt;meta charset="utf-8"&gt;
+                |       &lt;title&gt;My test page&lt;/title&gt;
+                |   &lt;/head&gt;
+                |   &lt;body&gt;
+                |       &lt;main&gt; ... &lt;/main&gt;
+                |   &lt;/body&gt;
+                |&lt;/html&gt;
+
