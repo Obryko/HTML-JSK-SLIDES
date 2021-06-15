@@ -4,8 +4,9 @@
   "description": "",
   "homepage": "https://obryko.github.io/html-jsk-slides",
   "scripts": {
-    "start": "parcel serve ./src/index.pug --open",
-    "build": "parcel build ./src/index.pug --public-url ."
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": {
     "name": "Kacper Obrycki",
@@ -19,17 +20,9 @@
     "reveal.js": "^4.1.0"
   },
   "devDependencies": {
-    "@parcel/optimizer-cssnano": "^2.0.0-nightly.616",
-    "@parcel/optimizer-htmlnano": "^2.0.0-nightly.616",
-    "@parcel/packager-css": "^2.0.0-nightly.616",
-    "@parcel/packager-html": "^2.0.0-nightly.616",
-    "@parcel/transformer-css": "^2.0.0-nightly.616",
-    "@parcel/transformer-html": "^2.0.0-nightly.616",
-    "@parcel/transformer-postcss": "^2.0.0-nightly.616",
-    "@parcel/transformer-posthtml": "^2.0.0-nightly.616",
-    "@parcel/transformer-pug": "^2.0.0-nightly.616",
-    "parcel": "^2.0.0-beta.1",
-    "postcss": "^8.2.7"
+    "pug": "^3.0.2",
+    "vite": "^2.3.7",
+    "vite-plugin-pug": "^0.3.0"
   },
   "license": "MIT"
 }
