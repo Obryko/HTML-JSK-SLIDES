@@ -5,6 +5,7 @@ import RevealMath from 'reveal.js/plugin/math/math.esm'
 import RevealNotes from 'reveal.js/plugin/notes/notes.esm'
 import RevealSearch from 'reveal.js/plugin/search/search.esm'
 import RevealZoom from 'reveal.js/plugin/zoom/zoom.esm'
+import { actualMonth } from './titlePageDetails';
 
 window.onload = () => {
     const deck = new Reveal({
@@ -18,4 +19,7 @@ window.onload = () => {
         transition: 'slide',
     });
     deck.initialize();
+    actualMonth();
 };
+
+
